@@ -6,7 +6,7 @@ import plugin from 'tailwindcss/plugin';
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		darkMode: ['selector', '[data-theme="dark"]'],
+		darkMode: ['selector'],
 		fontSize: {
 			xs: '0.75rem',
 			sm: '0.875rem',
