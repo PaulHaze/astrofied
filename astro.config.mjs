@@ -16,8 +16,8 @@ export default defineConfig({
 		react(),
 		icon(),
 	],
-	output: 'server',
-	adapter: cloudflare({
-		imageService: 'passthrough',
-	}),
+	output: 'static',
+	// adapter: cloudflare({
+	// 	imageService: 'passthrough',
+	// }),
 });
