@@ -1,9 +1,14 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+
+import ThemeToggle from '@/components/ui/ThemeToggle.astro';
 ---
 
 <Layout title="Simple Barebones Astro + Tailwind Starter Template">
-	<main class="flex w-full justify-center pt-10 text-center">
-		<h3 class="">Bare Bones Astro + Tailwind Starter</h3>
+	<main class="relative flex w-full justify-center text-center">
+		<div class="absolute right-1 top-1">
+			<ThemeToggle />
+		</div>
+		<h3 class="pt-10">Bare Bones Astro + Tailwind Starter</h3>
 	</main>
 </Layout>
