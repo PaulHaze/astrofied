@@ -8,14 +8,7 @@ import icon from 'astro-icon';
 
 export default defineConfig({
 	site: 'https://astrofied.pages.dev/',
-	integrations: [
-		sitemap(),
-		tailwind({
-			applyBaseStyles: false,
-		}),
-		react(),
-		icon(),
-	],
+	integrations: [sitemap(), tailwind(), react(), icon()],
 	output: 'static',
 	// adapter: cloudflare({
 	// 	imageService: 'passthrough',
