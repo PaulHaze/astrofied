@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import typographyPlugin from '@tailwindcss/typography';
 import daisyui from 'daisyui';
 
 import plugin from 'tailwindcss/plugin';
@@ -75,6 +76,7 @@ export default {
 		},
 	},
 	plugins: [
+		typographyPlugin,
 		daisyui,
 		plugin(({ addUtilities, matchUtilities, theme }) => {
 			addUtilities({
