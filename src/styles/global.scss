@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-	body {
-		@apply bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-white/90 transition-all;
+	html {
+		@apply bg-slate-50 text-slate-800 transition-all dark:bg-slate-900 dark:text-white/90;
 	}
+
 	h1 {
 		@apply text-4xl font-normal leading-normal;
 	}
