@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-// import daisyui from 'daisyui';
+import daisyui from 'daisyui';
 
 import plugin from 'tailwindcss/plugin';
 
@@ -75,7 +75,7 @@ export default {
 		},
 	},
 	plugins: [
-		// daisyui,
+		daisyui,
 		plugin(({ addUtilities, matchUtilities, theme }) => {
 			addUtilities({
 				'.flex-center': {
@@ -137,4 +137,9 @@ export default {
 			);
 		}),
 	],
+	daisyui: {
+		themes: true, // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
+		darkTheme: 'dark', // name of one of the included themes for dark mode
+		logs: false, // Shows info about daisyUI version and used config in the console when building your CSS
+	},
 } satisfies Config;
