@@ -2,13 +2,22 @@
 import Layout from '@/layouts/Layout.astro';
 
 import ThemeToggle from '@/components/ui/ThemeToggle.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import SideBar from '@/components/SideBar.astro';
 ---
 
 <Layout title="Astrofied Code Playground">
-	<main class="relative flex w-full justify-center text-center">
+	<main class="relative flex w-full flex-col justify-center text-center">
 		<div class="absolute right-2 top-2">
 			<ThemeToggle />
 		</div>
-		<h3 class="pt-10">Astrofied</h3>
+
+		<div class="space-y-5 pt-10">
+			<h3>Components</h3>
+			<Header />
+			<Footer />
+			<SideBar />
+		</div>
 	</main>
 </Layout>
