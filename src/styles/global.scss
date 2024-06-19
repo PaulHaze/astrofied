@@ -29,7 +29,12 @@
 
 @layer utilities {
 	.image-fade-top {
+		@apply transition-all duration-500;
 		mask-image: linear-gradient(transparent, #000000);
+		&:hover {
+			@apply transition-all duration-500;
+			mask-image: linear-gradient(#000000, #000000);
+		}
 	}
 	.bb {
 		@apply border border-red-600 sm:border-blue-600 md:border-green-600 lg:border-black;
