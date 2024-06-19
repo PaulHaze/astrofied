@@ -1,3 +1,23 @@
-<div class="">
-	<h1>Sidebar Menu Placeholder</h1>
-</div>
+---
+interface Props {
+	sideBarActiveItemID: string;
+}
+
+const { sideBarActiveItemID } = Astro.props;
+
+const activeClass = 'bg-base-300'; // For primary color replace with `active` class
+---
+
+<ul class="menu menu-md shrink grow overflow-y-auto">
+	<li>
+		<a href="/" class="py-3 text-base" id="home">Home</a>
+	</li>
+	<li>
+		<a
+			class="py-3 text-base"
+			href="mailto:info@artemist.com.au"
+			target="_blank"
+			referrerpolicy="no-referrer-when-downgrade">Contact</a
+		>
+	</li>
+</ul>
