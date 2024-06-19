@@ -27,13 +27,27 @@
 @layer components {
 }
 
+@property --c {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: transparent;
+}
+@property --op {
+	syntax: '<number>';
+	inherits: false;
+	initial-value: 0;
+}
+
 @layer utilities {
 	.image-fade-top {
-		@apply transition-all duration-500;
-		mask-image: linear-gradient(transparent, #000000);
+		--c: transparent;
+		--op: 0;
+		transition: --c 0.5s;
+		transition: --op 0.5s;
+		mask-image: linear-gradient(rgba(0, 0, 0, var(--op)), rgba(0, 0, 0, 1));
 		&:hover {
-			@apply transition-all duration-500;
-			mask-image: linear-gradient(#000000, #000000);
+			--c: #000000;
+			--op: 1;
 		}
 	}
 	.bb {
