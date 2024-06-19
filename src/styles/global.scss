@@ -39,7 +39,7 @@
 }
 
 @layer utilities {
-	.image-fade-top {
+	.mask-fade-top {
 		--c: transparent;
 		--op: 0;
 		transition: --c 0.5s;
