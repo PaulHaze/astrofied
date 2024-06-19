@@ -50,6 +50,9 @@
 			--op: 1;
 		}
 	}
+	.fade-top {
+		mask-image: linear-gradient(transparent, #000);
+	}
 	.bb {
 		@apply border border-red-600 sm:border-blue-600 md:border-green-600 lg:border-black;
 	}
