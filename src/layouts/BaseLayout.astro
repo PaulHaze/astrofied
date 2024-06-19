@@ -9,12 +9,12 @@ import { ViewTransitions } from 'astro:transitions';
 import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from '@/config';
 
 interface Props {
-	image: string;
-	title: string;
-	description: string;
-	includeSidebar: boolean;
+	image?: string;
+	title?: string;
+	description?: string;
+	includeSidebar?: boolean;
 	sideBarActiveItemID: string;
-	ogType: string;
+	ogType?: string;
 }
 
 const {
