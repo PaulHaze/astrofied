@@ -44,6 +44,8 @@ function preloadTheme() {
 	})();
 
 	const element = document.documentElement;
+	const imageOverlay = document.getElementById('overlay');
+	console.log(imageOverlay);
 
 	if (theme === 'dark') {
 		element.classList.add('dark');
@@ -58,6 +60,8 @@ function preloadTheme() {
 
 window.onload = () => {
 	function initializeThemeButtons() {
+		const imageOverlay = document.getElementById('overlay');
+		console.log(imageOverlay);
 		const headerThemeButton = document.getElementById('header-theme-button');
 		const drawerThemeButton = document.getElementById('drawer-theme-button');
 		headerThemeButton?.addEventListener('click', changeTheme);
