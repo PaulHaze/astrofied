@@ -9,9 +9,6 @@
 	[data-theme='dark'] {
 		--img-overlay: rgba(0, 0, 0, 0.9);
 	}
-	html {
-		@apply bg-slate-50 text-slate-800 transition-all dark:bg-slate-900 dark:text-white/90;
-	}
 
 	h1 {
 		@apply text-4xl font-normal leading-normal;
@@ -30,56 +27,18 @@
 	}
 }
 
-@mixin dark-overlay {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.9);
-}
-@mixin light-overlay {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background: rgba(255, 255, 255, 0.9);
-}
-
 @layer components {
 	.sidebar-bg {
 		@apply relative h-full w-full bg-cover bg-left;
 		background-image: url('/img/wavy_bg_bright.webp');
-		&::before {
-			// @include dark-overlay;
-			// @include light-overlay;
-			// content: '';
-			// position: absolute;
-			// left: 0;
-			// right: 0;
-			// top: 0;
-			// bottom: 0;
-			// background: rgba(0, 0, 0, 0.9);
-		}
 	}
-	[data-theme='dark'] .overlay {
+	.overlay {
 		position: absolute;
 		left: 0;
 		right: 0;
 		top: 0;
 		bottom: 0;
-		background: rgba(0, 0, 0, 0.9);
-	}
-	[data-theme='light'] .overlay {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		background: rgba(255, 255, 255, 0.9);
+		background: var(--img-overlay);
 	}
 }
 
