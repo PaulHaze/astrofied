@@ -5,9 +5,11 @@
 @layer base {
 	:root {
 		--img-overlay: rgba(255, 255, 255, 0.9);
+		--overlay-base: #fff;
 	}
 	[data-theme='dark'] {
 		--img-overlay: rgba(0, 0, 0, 0.9);
+		--overlay-base: #000;
 	}
 
 	h1 {
@@ -30,7 +32,14 @@
 @layer components {
 	.sidebar-bg {
 		@apply relative h-full w-full bg-cover bg-left;
-		background-image: url('/img/wavy_bg_bright.webp');
+		background-image: linear-gradient(
+				to bottom,
+				transparent,
+				transparent,
+				transparent,
+				var(--overlay-base)
+			),
+			url('/img/wavy_bg_bright.webp');
 	}
 	.overlay {
 		position: absolute;
