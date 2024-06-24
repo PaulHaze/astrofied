@@ -22,7 +22,7 @@ function changeTheme() {
 		element.setAttribute('data-theme', 'dark');
 	} else {
 		element.classList.remove('dark');
-		element.setAttribute('data-theme', 'light');
+		element.setAttribute('data-theme', 'corporate');
 	}
 
 	window.getComputedStyle(css).opacity;
