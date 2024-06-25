@@ -7,17 +7,20 @@ import { projectRoutes } from './projectRoutes';
 
 <BaseLayout sideBarActiveItemID="projects">
 	<main class="relative flex w-full flex-grow flex-col">
-		<h1>Current Projects</h1>
-		<div class="">
+		<h1 class="text-green-100">Current Projects</h1>
+		<div class="lg:space-y-5">
 			{
 				projectRoutes.map((project) => (
-					<HorizontalCard
-						url={project.url}
-						title={project.title}
-						desc={project.desc}
-						badge={project.badge}
-						target={project.target}
-					/>
+					<>
+						<HorizontalCard
+							url={project.url}
+							title={project.title}
+							desc={project.desc}
+							badge={project.badge}
+							target={project.target}
+						/>
+						<div class="divider opacity-10" />
+					</>
 				))
 			}
 		</div>
