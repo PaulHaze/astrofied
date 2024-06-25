@@ -76,6 +76,12 @@ export default {
 			},
 		},
 	},
+	extend: {
+		colors: {
+			'custom-yellow': '#BAA333',
+			'primary-muted': 'rgb(236.192,100)',
+		},
+	},
 	plugins: [
 		typographyPlugin,
 		daisyui,
@@ -145,6 +151,9 @@ export default {
 			{
 				light: {
 					...require('daisyui/src/theming/themes')['light'],
+					'--primary-muted': '24 83% 100%',
+					neutral: '#A7ADBA',
+					'neutral-content': '#2d343f',
 					// add individual colours here to customize theme
 					/* 
 					*EXAMPLE - ESSENTIAL
@@ -164,7 +173,7 @@ export default {
 					"base-200": "#dbdbdb", - Slightly darker shade of base-100
 					"base-300": "#bbbbbb", - Even darker shade of base-100
 					"base-content": "#161616", - Contrasting colour for text on base-100
-					
+
 					* Additional colours to be added if needed
 					"info": "#00b1ff",
 					"info-content": "#000c16",
@@ -191,6 +200,9 @@ export default {
 			{
 				dark: {
 					...require('daisyui/src/theming/themes')['dark'],
+					'--primary-muted': '262 80% 30%',
+					neutral: '#2d343f',
+					'neutral-content': '#A7ADBA',
 					// add individual colours here to customize theme
 				},
 			},
