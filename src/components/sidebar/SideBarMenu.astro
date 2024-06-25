@@ -1,0 +1,39 @@
+---
+import { cn } from '@/utils/clsxm';
+
+import { routes } from './routes';
+
+interface Props {
+	sideBarActiveItemID: string;
+}
+
+const { sideBarActiveItemID } = Astro.props;
+
+const activeClass = 'glass-subtle'; // For primary color replace with `active` class
+---
+
+<ul class="menu menu-md shrink grow overflow-y-auto">
+	{
+		routes.map((route) => (
+			<li class="">
+				<a
+					href={route.href}
+					id={route.id}
+					class={cn(
+						`py-3 text-base ${route.id === sideBarActiveItemID && activeClass}`
+					)}
+				>
+					{route.label}
+				</a>
+			</li>
+		))
+	}
+	<li>
+		<a
+			class="py-3 text-base"
+			href="mailto:info@artemist.com.au"
+			target="_blank"
+			referrerpolicy="no-referrer-when-downgrade">Contact</a
+		>
+	</li>
+</ul>
