@@ -45,6 +45,9 @@ export default {
 			center: true,
 		},
 		extend: {
+			colors: {
+				'primary-muted': 'hsl(var(--primary-muted) / <alpha-value>)',
+			},
 			minWidth: {
 				xs: '431px',
 				sm: '640px',
@@ -76,12 +79,7 @@ export default {
 			},
 		},
 	},
-	extend: {
-		colors: {
-			'custom-yellow': '#BAA333',
-			'primary-muted': 'rgb(236.192,100)',
-		},
-	},
+
 	plugins: [
 		typographyPlugin,
 		daisyui,
@@ -151,7 +149,7 @@ export default {
 			{
 				light: {
 					...require('daisyui/src/theming/themes')['light'],
-					'--primary-muted': '24 83% 100%',
+					'--primary-muted': '338 83% 66%',
 					neutral: '#A7ADBA',
 					'neutral-content': '#2d343f',
 					// add individual colours here to customize theme
@@ -200,7 +198,7 @@ export default {
 			{
 				dark: {
 					...require('daisyui/src/theming/themes')['dark'],
-					'--primary-muted': '262 80% 30%',
+					'--primary-muted': '38 83% 66%',
 					neutral: '#2d343f',
 					'neutral-content': '#A7ADBA',
 					// add individual colours here to customize theme
