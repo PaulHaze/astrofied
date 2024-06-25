@@ -46,7 +46,7 @@ export default {
 		},
 		extend: {
 			colors: {
-				'primary-muted': 'hsl(var(--primary-muted) / <alpha-value>)',
+				'primary-muted': 'oklch(var(--primary-muted-oklch) / <alpha-value>)',
 			},
 			minWidth: {
 				xs: '431px',
@@ -150,6 +150,7 @@ export default {
 				light: {
 					...require('daisyui/src/theming/themes')['light'],
 					'--primary-muted': '338 83% 66%',
+					'--primary-muted-oklch': '62.49% 0.1667 272.93',
 					neutral: '#A7ADBA',
 					'neutral-content': '#2d343f',
 					// add individual colours here to customize theme
@@ -199,6 +200,7 @@ export default {
 				dark: {
 					...require('daisyui/src/theming/themes')['dark'],
 					'--primary-muted': '38 83% 66%',
+					'--primary-muted-oklch': '48.11% 0.1667 272.93',
 					neutral: '#2d343f',
 					'neutral-content': '#A7ADBA',
 					// add individual colours here to customize theme
