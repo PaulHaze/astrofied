@@ -144,12 +144,14 @@ export default {
 		themes: [
 			{
 				light: {
-					...require('daisyui/src/theming/themes')['corporate'],
+					...require('daisyui/src/theming/themes')['light'],
+					// add individual colours here to customize theme
 				},
 			},
 			{
 				dark: {
-					...require('daisyui/src/theming/themes')['forest'],
+					...require('daisyui/src/theming/themes')['dark'],
+					// add individual colours here to customize theme
 				},
 			},
 		], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"],
