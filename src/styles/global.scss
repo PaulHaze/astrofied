@@ -4,8 +4,8 @@
 
 @layer base {
 	:root {
-		--img-overlay: rgba(255, 255, 255, 0.9);
-		--overlay-base: #fff;
+		--img-overlay: rgba(255, 255, 255, 0.75);
+		--overlay-base: #d7f3fd;
 	}
 	[data-theme='dark'] {
 		--img-overlay: rgba(0, 0, 0, 0.9);
