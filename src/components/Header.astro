@@ -1,5 +1,11 @@
 ---
 import ThemeToggle from './ui/ThemeToggle.astro';
+
+type Props = {
+	title?: string;
+};
+
+const { title } = Astro.props;
 ---
 
 <div
@@ -22,7 +28,7 @@ import ThemeToggle from './ui/ThemeToggle.astro';
 			</label>
 		</div>
 		<div class="navbar-center">
-			<a class="btn btn-ghost text-xl normal-case" href="/">ASTROFIED</a>
+			<a class="btn btn-ghost text-xl normal-case" href="/">{title}</a>
 		</div>
 		<div class="navbar-end">
 			<ThemeToggle />
