@@ -3,6 +3,7 @@ type Route = {
 	id: string;
 	label: string;
 	icon?: string;
+	target?: string;
 };
 
 export const routes: Route[] = [

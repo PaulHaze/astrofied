@@ -9,7 +9,7 @@ interface Props {
 
 const { sideBarActiveItemID } = Astro.props;
 
-const activeClass = 'glass rounded-full dark:glass-subtle bb '; // For primary color replace with `active` class
+const activeClass = 'glass dark:glass-subtle bb '; // For primary color replace with `active` class
 ---
 
 <ul class="menu menu-md shrink grow overflow-y-auto">
@@ -20,7 +20,7 @@ const activeClass = 'glass rounded-full dark:glass-subtle bb '; // For primary c
 					href={route.href}
 					id={route.id}
 					class={cn(
-						`py-3 text-base ${route.id === sideBarActiveItemID && activeClass}`
+						`rounded-full py-3 text-base hover:bg-white/50 dark:hover:bg-black/60 ${route.id === sideBarActiveItemID && activeClass}`
 					)}
 				>
 					{route.label}
@@ -28,12 +28,4 @@ const activeClass = 'glass rounded-full dark:glass-subtle bb '; // For primary c
 			</li>
 		))
 	}
-	<li>
-		<a
-			class="py-3 text-base"
-			href="mailto:info@artemist.com.au"
-			target="_blank"
-			referrerpolicy="no-referrer-when-downgrade">Contact</a
-		>
-	</li>
 </ul>
