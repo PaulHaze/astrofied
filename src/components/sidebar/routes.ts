@@ -42,4 +42,39 @@ export const routes: Route[] = [
 		id: 'contact',
 		label: 'Contact',
 	},
+	{
+		href: '/contact',
+		id: 'contact',
+		label: 'Contact',
+	},
+	{
+		href: '/contact',
+		id: 'contact',
+		label: 'Contact',
+	},
+	{
+		href: '/contact',
+		id: 'contact',
+		label: 'Contact',
+	},
+	{
+		href: '/contact',
+		id: 'contact',
+		label: 'Contact',
+	},
+	{
+		href: '/contact',
+		id: 'contact',
+		label: 'Contact',
+	},
+	{
+		href: '/contact',
+		id: 'contact',
+		label: 'Contact',
+	},
+	{
+		href: '/contact',
+		id: 'contact',
+		label: 'Contact',
+	},
 ];
